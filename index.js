@@ -103,6 +103,48 @@ for (i = 0; i < 5; i++) {
 for (i = 0, j = 5; i < 5; i++, j--) {
     console.log("Valor de i y j:", i, j);
 }
+//------------
+//---- Ejercicios con operadores lógicos 
+  var diaHoy = 17;
+	var diaAyer = 16;
+	var mesHoy = 10;
+	var mesAyer = 10;
+	var mesTexto = "10";
+	var comparacion;
+
+	//mayor que
+	comparacion = diaHoy > diaAyer;
+	document.write("Resultado: " + comparacion + "<br>");  /* devuelve true */
+
+	//menor que
+	comparacion = diaHoy < diaAyer;
+	document.write("Resultado: " + comparacion + "<br>");  /* devuelve false */
+
+	//mayor o igual
+	comparacion = mesHoy >= mesAyer;
+	document.write("Resultado: " + comparacion + "<br>");  /* devuelve true */
+
+	//menor o igual
+	comparacion = mesHoy <= mesAyer;
+	document.write("Resultado: " + comparacion + "<br>");  /* devuelve true */
+
+	//iguales
+	comparacion = mesHoy == mesAyer;
+	document.write("Resultado: " + comparacion + "<br>");  /* devuelve true */
+
+	//idénticos
+	comparacion = mesHoy == mesTexto;
+	console.log(comparacion)  /* devuelve true */
+	comparacion = mesHoy === mesTexto;
+	document.write("Resultado: " + comparacion + "<br>");  /* devuelve false */
+
+	//AND lógico
+	comparacion = (diaHoy > diaAyer) && (mesHoy == mesAyer);
+	document.write("Resultado: " + comparacion + "<br>");  /* devuelve true */
+
+	//OR lógico
+	comparacion = (diaHoy > diaAyer) || (diaHoy == diaAyer);
+	document.write("Resultado: " + comparacion + "<br>");  /* devuelve true */
 
 //------------
 // Juego de eight ball
