@@ -1,5 +1,21 @@
 console.log('Hola Mundo');
+//Operadores 
 
+let num1 = 10;
+let num2 = 50;
+9 * num1;
+num2 - num1;
+num2 % num1; 
+num2 / num1;
+//Expresiones complejas 
+5 + 10 * 3;
+(num2 % 9) * num1;
+num2 + num1 / 8 + 2;
+
+//Operadores de asignación 
+var x = 3; // x contiene el valor 3
+var y = 4; // y contiene el valor 4
+x *= y; // x ahora contiene el valor 12
 
  //  Ejercicio node.js
  function suma(){
@@ -9,6 +25,12 @@ console.log('Hola Mundo');
     console.log("Resultado suma: " + calculo)
  }
  suma()
+
+//  function suma(numero1,numero2){
+//    let calculo = numero1 + numero2;
+//    console.log("Resultado suma: " + calculo)
+// }
+// suma(5,6)
 
  function resta(){
     let numero3 = 4;
@@ -39,7 +61,7 @@ console.log('Hola Mundo');
  let apellido= "Garcia";
  let nombrecompleto = nombre + apellido
  console.log(nombrecompleto)
- //-----------------------------
+ //-------------Condición if/else----------------
  let name =  "Dany";
  let edad = 24;
  if (edad > 18) {
@@ -47,6 +69,15 @@ console.log('Hola Mundo');
  } else {
  console.log(`${name},no tienes permiso para conducir`)
  }
+ //operador ternario
+let nota = 7;
+console.log("He realizado mi examen. Mi resultado es el siguiente:");
+
+// Operador ternario: (condición ? verdadero : falso)
+let calificacion = nota < 5 ? "suspendido" : "aprobado";
+
+console.log("Estoy", calificacion);
+
  //------------------------------
 let m = 90;
 let a = 90;
