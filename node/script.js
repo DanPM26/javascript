@@ -91,3 +91,28 @@ if (promedio > 70){
 } else {
   console.log(`Reprobado: ${promedio}`)
 }
+
+//-------- Ciclos--------
+// for ([expresiónInicial]; [expresiónCondicional]; [expresiónDeActualización])
+//   instrucción
+
+//------For-------
+for (let step = 0; step < 5; step++) {
+   // Se ejecuta 5 veces, con valores del paso 0 al 4.
+   console.log("Camina un paso hacia el este");
+ }
+
+ //----- Do/ While-----
+ 
+let result = '';
+let i = 0;
+
+do {
+  i = i + 1;
+  result = result + i;
+} while (i < 5);
+
+console.log(result);
+// Expected output: "12345"
+
+ 
