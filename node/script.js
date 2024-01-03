@@ -17,45 +17,6 @@ var x = 3; // x contiene el valor 3
 var y = 4; // y contiene el valor 4
 x *= y; // x ahora contiene el valor 12
 
- //  Ejercicio node.js
- function suma(){
-    let numero1 = 4;
-    let numero2 = 10; 
-    let calculo = numero1 + numero2;
-    console.log("Resultado suma: " + calculo)
- }
- suma()
-
-//  function suma(numero1,numero2){
-//    let calculo = numero1 + numero2;
-//    console.log("Resultado suma: " + calculo)
-// }
-// suma(5,6)
-
- function resta(){
-    let numero3 = 4;
-    let numero4 = 10; 
-    let resultado = numero3 - numero4;
-    console.log("Resultado resta: " + resultado)
- }
- resta()
-
- function multiplicacion(){
-    let numero5 = 4;
-    let numero6 = 10; 
-    let result = numero5 * numero6;
-    console.log("Resultado multiplicación: " + result)
- }
- multiplicacion()
-
- function division(){
-    let numero7 = 4;
-    let numero8 = 10; 
-    let res = numero7 / numero8;
-    console.log("Resultado division: " + res)
- }
- division()
-
  //-----------------------------
  let nombre = "Juan";
  let apellido= "Garcia";
@@ -115,4 +76,41 @@ do {
 console.log(result);
 // Expected output: "12345"
 
- 
+ //------- Funciones-------
+ function suma(){
+   let numero1 = 4;
+   let numero2 = 10; 
+   let calculo = numero1 + numero2;
+   console.log("Resultado suma: " + calculo)
+}
+suma()
+
+//  function suma(numero1,numero2){
+//    let calculo = numero1 + numero2;
+//    console.log("Resultado suma: " + calculo)
+// }
+// suma(5,6)
+
+function resta(){
+   let numero3 = 4;
+   let numero4 = 10; 
+   let resultado = numero3 - numero4;
+   console.log("Resultado resta: " + resultado)
+}
+resta()
+
+function multiplicacion(){
+   let numero5 = 4;
+   let numero6 = 10; 
+   let result = numero5 * numero6;
+   console.log("Resultado multiplicación: " + result)
+}
+multiplicacion()
+
+function division(){
+   let numero7 = 4;
+   let numero8 = 10; 
+   let res = numero7 / numero8;
+   console.log("Resultado division: " + res)
+}
+division()
