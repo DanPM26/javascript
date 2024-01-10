@@ -14,47 +14,64 @@
 
 // Un constructor puede usar la palabra reservada super para llamar al constructor de una superclase
 
-// class Rectangulo {
-//     constructor (alto, ancho) {
-//       this.alto = alto;
-//       this.ancho = ancho;
-//     }
-//     // Getter
-//     get area() {
-//        return this.calcArea();
-//      }
-//     // Método
-//     calcArea () {
-//       return this.alto * this.ancho;
-//     }
-//   }
-  
-//   const cuadrado = new Rectangulo(10, 10);
-  
-//   console.log(cuadrado.area); // 100
+ class Rectangulo {
+     constructor (alto, ancho) {
+       this.alto = alto;
+       this.ancho = ancho;
+     }
+     // Getter
+     get area() {
+        return this.calcArea();
+      }
+     // Método
+     calcArea () {
+       return this.alto * this.ancho;
+     }
+   }
+
+   const cuadrado = new Rectangulo(10, 10);
+
+   console.log(cuadrado.area); // 100
   
 //-----------
 // Clases 
 
 
 // // Clase padre
-// class Forma {
-//     constructor() {
-//       console.log("Soy una forma geométrica.");
-//     }
-//   }
+ class Forma {
+     constructor() {
+       console.log("Soy una forma geométrica.");
+     }
+   }
   
 //   // Clase hija
-//   class Cuadrado extends Forma {
-//     constructor() {
-//       super();
-//       console.log("Soy un cuadrado.");
-//     }
-//   }
+  class Cuadrado extends Forma {
+     constructor() {
+       super();
+       console.log("Soy un cuadrado.");
+     }
+   }
   
-//   const c1 = new Cuadrado();
+   const c1 = new Cuadrado();
 //    Soy una forma geométrica.
 //    Soy un cuadrado.
+
+//----------------------------------------
+class Animal {
+  constructor(nombre) {
+    this.nombre = nombre;
+  }
+
+  hablar() {
+    console.log(this.nombre + " hace un ruido.");
+  }
+}
+
+class Perro extends Animal {
+  hablar() {
+    console.log(this.nombre + " ladra.");
+  }
+}
 
 
 //--------------------Ejercicios----------
