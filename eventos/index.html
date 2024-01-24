@@ -8,13 +8,70 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body id="cuerpo">
+
    <form>
     <label for=""> Introduzca un color en ingles</label>
     <input type="text" size="20px" id="colordefondo">
     <input type="button" id="cambiarcolor" value="Cambiar">
    </form>
+<!---Ejericio básico de guardar clicks-->
+<h1>Clickeame y observa cuantos clicks incrementa</h1>
+<button id="incrementar">Click aquí</button>
+<button id="borrar">Borrar</button>
+<div id="result2"></div>
 
-   
+   <!--- Conversor de monedas -->
+<h1> Convertir monedas</h1>
+
+<label for="pesos"> Convertir pesos a: </label>
+     <input type="text" id="pesos">
+     <input type="button" onclick="pesos()" value="Enviar">
+<p id="resultado1">Euros</p>
+
+<label for="euros"> Convertir Euros a: </label>
+      <input type="text" id="euros">
+      <input type="button" onclick="euros()" value="Enviar">
+<p id="resultado2"> Dolares: </p>
+
+<label for="dolares"> Convertir pesos a: </label>
+     <input type="text" id="dolares">
+     <input type="button" onclick="dolares()" value="Enviar">
+<p id="resultado3">Bitcoin:</p>
+
+<!-- Utilización del className -->
+<h2>Lista de Elementos</h2>
+  
+<ul>
+  <li class="destacado">Elemento 1</li>
+  <li>Elemento 2</li>
+  <li class="destacado">Elemento 3</li>
+  <li>Elemento 4</li>
+</ul>
+ <!-- utilización del getElementByName -->
+<form>
+    <label>
+      <input type="radio" name="genero" value="masculino"> Masculino
+    </label>
+    <label>
+      <input type="radio" name="genero" value="femenino"> Femenino
+    </label>
+    <label>
+      <input type="radio" name="genero" value="otro"> Otro
+    </label>
+
+    <br>
+
+    <button type="button" onclick="mostrarGeneroSeleccionado()">Mostrar Género</button>
+  </form>
+
+  <p class="resultado" id="resultadoGenero"></p>
+
+  <!-- Utilizando QuerySelectorAll y onchange  -->
+  <label for="miInput">Ingresa tu nombre:</label>
+  <input type="text" id="miInput">
+
+  <p id="mensaje">Mensaje: No has ingresado tu nombre</p>
+
 
 <script src="./index.js"></script>
 </body>
