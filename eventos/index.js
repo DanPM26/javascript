@@ -7,7 +7,7 @@ window.addEventListener("load", function(){
 })
 
 
-///------Clickcounter 
+///------Clickcounter----- 
 let valor_inicial = 0;
 
     function actualizarResultado() {
